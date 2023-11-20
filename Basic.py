@@ -1,7 +1,7 @@
 import pprint
 import google.generativeai as palm
 
-palm.configure(api_key='AIzaSyDhZvuMa_Irg6kvJoaR8az1hgTijw1bodM')
+palm.configure(api_key='YOUR_API_KEY')
 
 models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
 model = models[0].name
